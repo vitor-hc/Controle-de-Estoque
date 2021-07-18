@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
 
 const DataSchema=new mongoose.Schema({
+    cod_produto:Number,
     nome_produto:String,
     descricao_produto:String,
     preco_produto:Number,
-    qts_produto:{type: Number,default:0}
+    qtd_produto:{type: Number,default:0}
 },{
     timestamps:true
 });
